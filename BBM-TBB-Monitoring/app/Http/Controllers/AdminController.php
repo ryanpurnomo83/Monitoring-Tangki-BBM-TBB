@@ -11,18 +11,40 @@ class AdminController extends Controller
         return view('ADMIN/dashboard');
     }
 
+    public function Users()
+    {
+        return view('ADMIN/users');
+    }
+
     public function Message()
     {
         return view('ADMIN/message');
     }
 
-    public function SignUp()
+    public function DetailMessage()
     {
-        return view('ADMIN/check-status');
+        return view('ADMIN/detail-message');
+    }
+
+    public function SignUp()
+    {   
+        $data = 0;
+        return view('ADMIN/check-status', ['data' => $data]);
     }
 
     public function SignIn()
     {
-        return view('ADMIN/check-status');
+        $data = 1;
+        return view('ADMIN/check-status', ['data' => $data]);
+    }
+
+    public function Orders()
+    {
+        return view('ADMIN/orders');
+    }
+
+    public function Settings()
+    {
+        return view('ADMIN/settings');
     }
 }

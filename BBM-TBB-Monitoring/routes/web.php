@@ -24,6 +24,11 @@ Route::get('/signin', [
     'SignIn'
 ])->name('signin');
 
+Route::get('/users', [
+    AdminController::class,
+    'Users'
+])->name('users');
+
 Route::get('/dashboard', [
     AdminController::class,
     'Dashboard'
@@ -33,3 +38,18 @@ Route::get('/message', [
     AdminController::class,
     'Message'
 ])->name('message');
+
+Route::get('/messagedetail', [
+    AdminController::class,
+    'DetailMessage'
+])->name('messagedetail');
+
+Route::get('/orders', [
+    AdminController::class,
+    'Orders'
+])->name('orders');
+
+Route::get('/settings', [
+    AdminController::class,
+    'Settings'
+])->name('settings');
