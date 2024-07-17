@@ -72,5 +72,28 @@
     </div>
 
     <script src="{{ asset('ADMIN/bootstrap/js/bootstrap.bundle.min.js') }}"></script>
+    <script>
+        /*
+        // Menghitung dan menampilkan jumlah pengunjung
+        const visitorCountKey = 'visitorCount';
+        let visitorCount = localStorage.getItem(visitorCountKey) || 0;
+        visitorCount++;
+        localStorage.setItem(visitorCountKey, visitorCount);
+        //document.getElementById('status').innerText = `Total Visitors: ${visitorCount}`;
+
+        // Menangani form submit
+        document.getElementById('signinForm').addEventListener('submit', function(event) {
+            event.preventDefault();
+
+            // Mengambil data dari form
+            const email = document.getElementById('email').value;
+            const password = document.getElementById('password').value;
+
+            // Simpan data di localStorage
+            localStorage.setItem(`user_${visitorCount}`, JSON.stringify({ email, password }));
+            // Reset form
+            this.reset();
+        });*/
+    </script>
 </body>
 </html>
